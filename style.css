@@ -398,12 +398,12 @@ html {
     font-size: 0.9rem;
   }
   
-  .foot .logo {
+  .logo {
     margin: 0px;
     font-size: 2rem;
     font-weight: 400;
     text-decoration: none;
-    color: white;
+    color: #e70634;
   }
   
   .logo span {
