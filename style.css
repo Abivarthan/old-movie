@@ -397,7 +397,7 @@ html {
     font-size: 0.9rem;
   }
   
-  .foot .logo {
+  .logo {
     margin: 0px;
     font-size: 2rem;
     font-weight: 400;
@@ -428,7 +428,7 @@ html {
       padding: 15px 5%;
     }
   
-    .foot .logo {
+    .logo {
       font-size: 1.5rem;
     }
   
@@ -443,7 +443,7 @@ html {
   }
   
   @media screen and (max-width: 480px) {
-    .foot .logo {
+    .logo {
       font-size: 1.3rem;
     }
   
