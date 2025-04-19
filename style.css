@@ -380,7 +380,8 @@ html {
 
 .footer {
     width: 100%;
-  } 
+  }
+  
   .foot {
     background-color: #0e0e0ec2;
     display: flex;
@@ -397,16 +398,16 @@ html {
     font-size: 0.9rem;
   }
   
-  .logo {
+  .foot .logo {
     margin: 0px;
     font-size: 2rem;
     font-weight: 400;
     text-decoration: none;
-    color: #e70634;
+    color: white;
   }
   
   .logo span {
-    color: white;
+    color: #f39c12;
   }
   
   .creator {
@@ -428,7 +429,7 @@ html {
       padding: 15px 5%;
     }
   
-    .logo {
+    .foot .logo {
       font-size: 1.5rem;
     }
   
@@ -443,7 +444,7 @@ html {
   }
   
   @media screen and (max-width: 480px) {
-    .logo {
+    .foot .logo {
       font-size: 1.3rem;
     }
   
@@ -451,7 +452,153 @@ html {
       font-size: 1.2rem;
     }
   }
+  
+/* Responsive Design */
 
+/* Small devices (up to 768px) */
+@media (min-width: 600px) {
+    .foot {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 30px;
+    }
+  
+    .footer {
+      text-align: left;
+    }
+  
+    .creator {
+      margin-top: 15px;
+      text-align: center;
+    }
+  }
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        display: grid;
+        grid-template-columns: 60px 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 20px 0px;
+    }
+    .search-box{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 100%;
+        border-radius: 0px;
+    }
+    /* .logo {
+        font-size: 2rem;
+        margin: 0 0 10px 20px;
+    } */
+    .menu li a {
+        font-size: 1.5rem;
+    }
+    .search-box {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .swiper-slide {
+        width: 450px ;
+        height: 350px;
+    }
+    .post-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+    .main-sliderbox, .post-box {
+        height: 350px;
+    }
+    .main-slidertext .movie-name strong {
+        font-size: 1.2rem;
+    }
+    .main-slidertext .category-rating .rating {
+        font-size: 0.9rem;
+    }
+    
+}
+
+/* Medium devices (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .nav-bar {
+        padding: 15px 20px;
+    }
+    /* .logo {
+        font-size: 2.5rem;
+    } */
+    .menu li a {
+        font-size: 1.8rem;
+    }
+    .swiper-slide {
+        height: 400px;
+    }
+    .main-sliderbox, .post-box {
+        height: 400px;
+    }
+    .main-slidertext .movie-name strong {
+        font-size: 1.3rem;
+    }
+    
+}
+
+/* Large devices (1025px - 1400px) */
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+    .nav-bar {
+        padding: 20px 40px;
+    }
+    .menu li a {
+        font-size: 2rem;
+    }
+    .swiper-slide {
+        height: 450px;
+    }
+    .main-sliderbox, .post-box {
+        height: 450px;
+    }
+    .main-slidertext .movie-name strong {
+        font-size: 1.5rem;
+    }
+}
+
+/* Extra small devices (up to 480px) */
+@media screen and (max-width: 645px) {
+    .nav-bar {
+        display: grid;
+        grid-template-columns: 60px 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 20px 0px;
+    }
+    .logo{
+        margin: 0px;
+    }
+    .search-box{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 100%;
+        border-radius: 0px;
+    }
+    .menu li a {
+        font-size: 1.3rem;
+        margin: 5px;
+    }
+    .swiper-slide {
+        height: 300px;
+    }
+    .main-sliderbox, .post-box {
+        height: 300px;
+    }
+    .main-slidertext .movie-name strong {
+        font-size: 1rem;
+    }
+    .post-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+}
+@media screen and (max-width: 325px) {
+    .logo{
+        font-size: 20px;
+    }
+}
 
 /* now we are going to style the movie-data.html*/
 
