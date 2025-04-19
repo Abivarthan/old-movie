@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIES-HD</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <label for="menu-btn" class="menu-btn">
+           <span> <i class='bx bx-menu' id="icon"></i></span>
+        </label>
+        <a href="#" class="logo">OLD MOVIES <span class="hd">.hd</span></a>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#old-movies">Old Movies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <form action="" class="search-box" onsubmit="return false;">
+            <input type="text" name="search" placeholder="Search Movie" class="search" onkeyup="searchMovies()" required>
+            <!-- <button type="submit" class="submit"><i class='bx bx-search'></i></button> -->
+        </form>        
+    </nav>
+    <section id="main-slider">
+        <!-- this below div are pre defined one we can use in our -->
+      <div class="swiper  card-wrapper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">  <div class="main-sliderbox ">
+            <a href="movie-data.html?id=1" class="main-slideroverlay" >
+                <i class="fas fa-play"></i>
+            </a>
+            <div class="slide-img">
+                <img src="AR_Rahman_Bombay_HD.webp" alt="Movie image" data-id=1>
+            </div>
+            <div class="main-slidertext">
+                <span class="quality">Full HD</span>
+                <div class="bottom-text">
+                    <div class="movie-name">
+                        <span>1995</span>
+                        <strong>Bombay</strong>
+                    </div>
+                    <div class="category-rating">
+                        <div class="category">
+                            <a href="#">Romatic</a>,
+                            <a href="#">Drama</a>,
+                            <a href="#">Action</a>
+                        </div>
+                        <div class="rating">
+                            8.1<img src="imdb.jpg" alt="imdb">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div></div>
+        <div class="swiper-slide">  <div class="main-sliderbox ">
+            <a href="movie-data.html?id=2" class="main-slideroverlay">
+
+
+                <i class="fas fa-play"></i>
+            </a>
+            <div class="slide-img">
+                <img src="kandukondain-kandukomdain.jpg" alt="kandukondain-kandukomdain" data-id="2">
+            </div>
+            <div class="main-slidertext">
+                <span class="quality">Full HD</span>
+                <div class="bottom-text">
+                    <div class="movie-name">
+                        <span>2000</span>
+                        <strong>Kandukondain Kandukondain</strong>
+                    </div>
+                    <div class="category-rating">
+                        <div class="category">
+                            <a href="#">Drama</a>,
+                            <a href="#">Romance</a>
+                        </div>
+                        <div class="rating">
+                            7.6<img src="imdb.jpg" alt="imdb">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div></div>
+        <div class="swiper-slide">  <div class="main-sliderbox ">
+            <a href="movie-data.html?id=3" class="main-slideroverlay">
+
+
+                <i class="fas fa-play"></i>
+            </a>
+            <div class="slide-img">
+                <img src="gentle-man.jpg" alt="Gentleman" data-id="3">
+            </div>
+            <div class="main-slidertext">
+                <span class="quality">Full HD</span>
+                <div class="bottom-text">
+                    <div class="movie-name">
+                        <span>1993</span>
+                        <strong>Gentleman</strong>
+                    </div>
+                    <div class="category-rating">
+                        <div class="category">
+                            <a href="#">Action</a>,
+                            <a href="#">Drama</a>,
+                            <a href="#">Thriller</a>
+                        </div>
+                        <div class="rating">
+                            7.8<img src="imdb.jpg" alt="imdb">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div></div>
+        <div class="swiper-slide">  <div class="main-sliderbox ">
+            <a href="movie-data.html?id=4" class="main-slideroverlay">
+
+
+                <i class="fas fa-play"></i>
+            </a>
+            <div class="slide-img">
+                <img src="anbe-sivam.jpg" alt="Anbe Sivam" data-id="4">
+            </div>
+            <div class="main-slidertext">
+                <span class="quality">Full HD</span>
+                <div class="bottom-text">
+                    <div class="movie-name">
+                        <span>2003</span>
+                        <strong>Anbe Sivam</strong>
+                    </div>
+                    <div class="category-rating">
+                        <div class="category">
+                            <a href="#">Adventure</a>,
+                            <a href="#">Comedy</a>,
+                            <a href="#">Drama</a>
+                        </div>
+                        <div class="rating">
+                            8.6<img src="imdb.jpg" alt="imdb">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div></div>
+        <div class="swiper-slide">  <div class="main-sliderbox ">
+            <a href="movie-data.html?id=5" class="main-slideroverlay">
+
+
+                <i class="fas fa-play"></i>
+            </a>
+            <div class="slide-img">
+                <img src="vaaranam-aayiram.jpg" alt="Movie image" data-id="5">
+            </div>
+            <div class="main-slidertext">
+                <span class="quality">Full HD</span>
+                <div class="bottom-text">
+                    <div class="movie-name">
+                        <span>2008</span>
+                        <strong>Vaaranam Aayiram</strong>
+                    </div>
+                    <div class="category-rating">
+                        <div class="category">
+                            <a href="#">Action</a>,
+                            <a href="#">Drama</a>,
+                            <a href="#">Musical</a>,
+                            <a href="#">Romance</a>
+                        </div>
+                        <div class="rating">
+                            8.2<img src="imdb.jpg" alt="imdb">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div></div>
+            
+          </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+      </div>
+        
+    </section>
+    <!-- now create the old feel good movies -->
+    <section class="latest" id="old-movies">
+        <div class="latest-heading">
+            <h1>Old Feel Good Movies</h1>
+        </div>
+        <div class="post-container">
+            <div class="post-box">
+                <a href="movie-data.html?id=6" class="main-slideroverlay">
+
+
+                    <i class="fas fa-play"></i>
+                </a>
+                <!-- <div class="main-slideroverlay">
+                    <i class="fas fa-play"></i>
+                </div> -->
+
+                <div class="slide-img">
+                    <img src="thalapathi.jpg" alt="Thalapathi" data-id="6">
+                </div>
+                <div class="main-slidertext">
+                    <span class="quality">Full HD</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>1991</span>
+                            <strong>Thalapathi</strong>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Action</a>,
+                                <a href="#">Crime</a>,
+                                <a href="#">Drama</a>
+                            </div>
+                            <div class="rating">
+                                8.5<img src="imdb.jpg" alt="imdb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-box">
+                <a href="movie-data.html?id=7" class="main-slideroverlay">
+
+
+                    <i class="fas fa-play"></i>
+                </a>
+                <div class="slide-img">
+                    <img src="roja.jpg" alt="Roja" data-id="7">
+                </div>
+                <div class="main-slidertext">
+                    <span class="quality">Full HD</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>1992</span>
+                            <strong>Roja</strong>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Romance</a>,
+                                <a href="#">Drama</a>,
+                                <a href="#">Thriller</a>
+                            </div>
+                            <div class="rating">
+                                8.1<img src="imdb.jpg" alt="imdb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-box">
+                <a href="movie-data.html?id=8" class="main-slideroverlay">
+
+
+                    <i class="fas fa-play"></i>
+                </a>
+                <div class="slide-img">
+                    <img src="senthurapandi.jpg" alt="Senthoorapandi" data-id="8">
+                </div>
+                <div class="main-slidertext">
+                    <span class="quality">Full HD</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>1993</span>
+                            <strong>Senthoorapandi</strong>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Action</a>,
+                                <a href="#">Drama</a>
+                            </div>
+                            <div class="rating">
+                                7.7<img src="imdb.jpg" alt="imdb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-box">
+                <a href="movie-data.html?id=9" class="main-slideroverlay">
+
+
+                    <i class="fas fa-play"></i>
+                </a>
+                <div class="slide-img">
+                    <img src="nattamai.jpg" alt="Nattamai" data-id="9">
+                </div>
+                <div class="main-slidertext">
+                    <span class="quality">Full HD</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>1994</span>
+                            <strong>Nattamai</strong>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Drama</a>,
+                                <a href="#">family</a>
+                            </div>
+                            <div class="rating">
+                                6.9<img src="imdb.jpg" alt="imdb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-box">
+                <a href="movie-data.html?id=10" class="main-slideroverlay">
+
+
+                    <i class="fas fa-play"></i>
+                </a>
+                <div class="slide-img">
+                    <img src="aasai.jpg" alt="Aasai" data-id="10">
+                </div>
+                <div class="main-slidertext">
+                    <span class="quality">Full HD</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>1995</span>
+                            <strong>Aasai</strong>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Romance</a>,
+                                <a href="#">Thriller</a>
+                            </div>
+                            <div class="rating">
+                                7.5<img src="imdb.jpg" alt="imdb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-box">
+                <a href="movie-data.html?id=11" class="main-slideroverlay">
+
+
+                    <i class="fas fa-play"></i>
+                </a>
+                <div class="slide-img">
+                    <img src="Ayudha-poojai.jpg" alt="Ayudha Poojai" data-id="11">
+                </div>
+                <div class="main-slidertext">
+                    <span class="quality">Full HD</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>1995</span>
+                            <strong>Ayudha Poojai</strong>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Action</a>,
+                                <a href="#">Drama</a>
+                            </div>
+                            <div class="rating">
+                                5.9<img src="imdb.jpg" alt="imdb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-box">
+                <a href="movie-data.html?id=12" class="main-slideroverlay">
+
+
+                    <i class="fas fa-play"></i>
+                </a>
+                <div class="slide-img">
+                    <img src="poove-unnakaka.jpg" alt="Poove Unakkaga" data-id="12">
+                </div>
+                <div class="main-slidertext">
+                    <span class="quality">Full HD</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>1996</span>
+                            <strong>Poove Unakkaga</strong>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Romance</a>,
+                                <a href="#">Drama</a>
+                            </div>
+                            <div class="rating">
+                                8.6<img src="imdb.jpg" alt="imdb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-box">
+                <a href="movie-data.html?id=13" class="main-slideroverlay">
+
+
+                    <i class="fas fa-play"></i>
+                </a>
+                <div class="slide-img">
+                    <img src="nerukku-ner.jpg" alt="Nerukku Ner" data-id="13">
+                </div>
+                <div class="main-slidertext">
+                    <span class="quality">Full HD</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>1997</span>
+                            <strong>Nerukku Ner</strong>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Action</a>,
+                                <a href="#">Drama</a>
+                            </div>
+                            <div class="rating">
+                                7.4<img src="imdb.jpg" alt="imdb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-box">
+                <a href="movie-data.html?id=14" class="main-slideroverlay">
+
+
+                    <i class="fas fa-play"></i>
+                </a>
+                <div class="slide-img">
+                    <img src="kadhalar-dhinam.jpg" alt="Kadhalar Dhinam" data-id="14">
+                </div>
+                <div class="main-slidertext">
+                    <span class="quality">Full HD</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>1999</span>
+                            <strong>Kadhalar Dhinam</strong>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Romance</a>,
+                                <a href="#">Drama</a>
+                            </div>
+                            <div class="rating">
+                                6.6<img src="imdb.jpg" alt="imdb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-box">
+                <a href="movie-data.html?id=15" class="main-slideroverlay">
+
+
+                    <i class="fas fa-play"></i>
+                </a>
+                <div class="slide-img">
+                    <img src="kushi.jpg" alt="Kushi" data-id="15">
+                </div>
+                <div class="main-slidertext">
+                    <span class="quality">Full HD</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>2000</span>
+                            <strong>Kushi</strong>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Romance</a>,
+                                <a href="#">Comedy</a>
+                            </div>
+                            <div class="rating">
+                                7.9<img src="imdb.jpg" alt="imdb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-box">
+                <a href="movie-data.html?id=16" class="main-slideroverlay">
+
+
+                    <i class="fas fa-play"></i>
+                </a>
+                <div class="slide-img">
+                    <img src="alaipayuthey.jpeg" alt="Alaipayuthey" data-id="16">
+                </div>
+                <div class="main-slidertext">
+                    <span class="quality">Full HD</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>2000</span>
+                            <strong>Alaipayuthey</strong>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Romance</a>,
+                                <a href="#">Drama</a>
+                            </div>
+                            <div class="rating">
+                                8.3<img src="imdb.jpg" alt="imdb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-box">
+                <a href="movie-data.html?id=17" class="main-slideroverlay">
+
+
+                    <i class="fas fa-play"></i>
+                </a>
+                <div class="slide-img">
+                    <img src="rhythm.jpg" alt="Rhythm" data-id="17">
+                </div>
+                <div class="main-slidertext">
+                    <span class="quality">Full HD</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>2000</span>
+                            <strong>Rhythm</strong>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Romance</a>,
+                                <a href="#">Drama</a>
+                            </div>
+                            <div class="rating">
+                                7.7<img src="imdb.jpg" alt="imdb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-box">
+                <a href="movie-data.html?id=18" class="main-slideroverlay">
+
+
+                    <i class="fas fa-play"></i>
+                </a>
+                <div class="slide-img">
+                    <img src="vanathai-pola.jpg" alt="Vanathai Pola" data-id="18">
+                </div>
+                <div class="main-slidertext">
+                    <span class="quality">Full HD</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>2000</span>
+                            <strong>Vanathai Pola</strong>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Drama</a>,
+                                <a href="#">Family</a>
+                            </div>
+                            <div class="rating">
+                                7.1<img src="imdb.jpg" alt="imdb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-box">
+                <a href="movie-data.html?id=19" class="main-slideroverlay">
+
+
+                    <i class="fas fa-play"></i>
+                </a>
+                <div class="slide-img">
+                    <img src="shahjahan.jpg" alt="Shahjahan" data-id="19">
+                </div>
+                <div class="main-slidertext">
+                    <span class="quality">Full HD</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>2001</span>
+                            <strong>Shahjahan</strong>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Romance</a>,
+                                <a href="#">Drama</a>
+                            </div>
+                            <div class="rating">
+                                7.6<img src="imdb.jpg" alt="imdb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-box">
+                <a href="movie-data.html?id=20" class="main-slideroverlay">
+
+
+                    <i class="fas fa-play"></i>
+                </a>
+                <div class="slide-img">
+                    <img src="samuthiram.jpg" alt="Samudhram" data-id="20">
+                </div>
+                <div class="main-slidertext">
+                    <span class="quality">Full HD</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>2001</span>
+                            <strong>Samudhram</strong>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Action</a>,
+                                <a href="#">Drama</a>,
+                                <a href="#">Family</a>
+                            </div>
+                            <div class="rating">
+                                6.2<img src="imdb.jpg" alt="imdb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-box">
+                <a href="movie-data.html?id=21" class="main-slideroverlay">
+
+
+                    <i class="fas fa-play"></i>
+                </a>
+                <div class="slide-img">
+                    <img src="Aanadham.jpg" alt="Aanandham" data-id="21">
+                </div>
+                <div class="main-slidertext">
+                    <span class="quality">Full HD</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>2001</span>
+                            <strong>Aanandham</strong>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Drama</a>,
+                                <a href="#">Family</a>
+                            </div>
+                            <div class="rating">
+                                5.9<img src="imdb.jpg" alt="imdb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-box">
+                <a href="movie-data.html?id=22" class="main-slideroverlay">
+
+
+                    <i class="fas fa-play"></i>
+                </a>
+                <div class="slide-img">
+                    <img src="jay-jay.jpg" alt="Jay Jay" data-id="22">
+                </div>
+                <div class="main-slidertext">
+                    <span class="quality">Full HD</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>2003</span>
+                            <strong>Jay Jay</strong>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Romance</a>,
+                                <a href="#">Comedy</a>
+                            </div>
+                            <div class="rating">
+                               5.9<img src="imdb.jpg" alt="imdb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-box">
+                <a href="movie-data.html?id=23" class="main-slideroverlay">
+
+
+                    <i class="fas fa-play">
+                        
+                    </i>
+                </a>
+                <div class="slide-img">
+                    <img src="sachein.jpeg" alt="Sachein" data-id="23">
+                </div>
+                <div class="main-slidertext">
+                    <span class="quality">Full HD</span>
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>2005</span>
+                            <strong>Sachein</strong>
+                        </div>
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Romance</a>,
+                                <a href="#">Comedy</a>
+                            </div>
+                            <div class="rating">
+                               7.4<img src="imdb.jpg" alt="imdb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+       <div class="foot">
+        <a href="index.html" class="logo">OLD MOVIES <span>.hd</span></a>
+        <span class="copyright">
+            Copyright 2025 - Abiajay444
+        </span>
+       </div>
+        <h3 class="creator">
+            Designed by A.ABIVARTHAN
+    </h3>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+<script src="script.js"></script>
+</html>
