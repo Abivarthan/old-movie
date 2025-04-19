@@ -450,12 +450,6 @@ function searchMovies() {
                                 <a href="${movie.trailer}" class="watch-btn" target="_blank">Watch Trailer</a>
                             </div>
                         </div>
-                        <div class="playbtn-container">
-                            <div class="play-btn">
-                                <i class="fas fa-play"<video src="bombay-clips.mp4"></video></i>
-
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <section class="download-movie">
