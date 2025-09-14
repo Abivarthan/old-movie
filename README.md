@@ -21,7 +21,7 @@ A beautifully designed **Old Movie Portfolio Website** showcasing classic cinema
 
 - **HTML5**
 - **CSS3**
-- **JavaScript (Vanilla JS)**
+- **JavaScript**
 
 ---
 
