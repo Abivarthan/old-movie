@@ -374,6 +374,11 @@ html {
     background-color: #a7a7a7;
     user-select: none;
 }
+@media screen and (max-width:320){
+    .post-box{
+        width:290px;
+    }
+}
 .post-box:hover .main-slideroverlay{
     top: 0px;
     transition: all ease 0.3s;
@@ -469,7 +474,6 @@ html {
     }
   
     .creator {
-      margin-top: 15px;
       text-align: center;
     }
   }
