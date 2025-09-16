@@ -389,19 +389,19 @@ function searchMovies() {
                             <span><i class="fas fa-server"></i> Server 1</span>
                             <span>Tamil</span>
                             <span>480p</span>
-                            <a href="sorry.html" download>Download</a>
+                            <a href="sorry.html">Download</a>
                         </div>
                         <div class="download-box">
                             <span><i class="fas fa-server"></i> Server 1</span>
                             <span>Tamil</span>
                             <span>720p</span>
-                            <a href="sorry.html" download>Download</a>
+                            <a href="sorry.html">Download</a>
                         </div>
                         <div class="download-box">
                             <span><i class="fas fa-server"></i> Server 1</span>
                             <span>Tamil</span>
                             <span>1080p</span>
-                            <a href="sorry.html" download>Download</a>
+                            <a href="sorry.html">Download</a>
                         </div>
                     </div>
                 </section>
